@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/tt-commons?styles=87754');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #27272A
+}
