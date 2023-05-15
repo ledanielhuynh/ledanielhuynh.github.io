@@ -7,9 +7,9 @@ import rissk from '../assets/rissk.png';
 import destinate from '../assets/destinate.png';
 import dailyui from '../assets/dailyui.png';
 
-const ProjectCard = ({ number, category, image, logo, title, description }) => {
+const ProjectCard = ({ number, category, image, logo, title, description, link }) => {
   return (
-    <div className='flex flex-col p-8 space-y-8 bg-zinc-900 rounded-2xl hover:bg-zinc-950 transition duration-300 ease-out'>
+    <a href={link} target="_blank" rel="noopener noreferrer" className='flex flex-col p-8 space-y-8 bg-zinc-900 rounded-2xl hover:bg-zinc-950 transition duration-300 ease-out'>
       <div className='flex flex-row justify-between items-center'>
         <div className='space-y-2'>
           <h1 className='font-bold text-4xl text-white'>{number}</h1>
@@ -24,7 +24,7 @@ const ProjectCard = ({ number, category, image, logo, title, description }) => {
         <h1 className='font-bold text-3xl text-white'>{title}</h1>
         <ul className='md:text-lg text-base text-zinc-300'>{description}</ul>
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -46,6 +46,7 @@ const Projects = () => {
             image={website}
             title='PORTFOLIO WEBSITE'
             description='A website that displays my personality, interests, projects, and experiences on a centralized and aesthetic platform.'
+            link='https://github.com/ledanielhuynh/ledanielhuynh.github.io'
           />
 
           <ProjectCard
@@ -55,6 +56,7 @@ const Projects = () => {
             image={unilectives}
             title='UNI-LECTIVES'
             description="Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives."
+            link='https://ledanielhuynh.github.io/'
           />
         </div>
 
@@ -66,6 +68,7 @@ const Projects = () => {
             image={rissk}
             title='RISSK.'
             description='An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.'
+            link='https://ledanielhuynh.github.io/'
           />
 
           <ProjectCard
@@ -75,6 +78,7 @@ const Projects = () => {
            image={destinate}
            title='DESTINATE'
            description='An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.'
+           link='https://ledanielhuynh.github.io/'
           />
           <ProjectCard
             number='05'
@@ -83,6 +87,7 @@ const Projects = () => {
             image={dailyui}
             title='DAILY UI'
             description='A design challenge that presents daily prompts for designing user interfaces.'
+            link='https://ledanielhuynh.github.io/'
           />
         </div>
       </div>
