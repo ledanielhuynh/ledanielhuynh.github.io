@@ -45,7 +45,8 @@ const Projects = () => {
             logo={github}
             image={website}
             title='PORTFOLIO WEBSITE'
-            description='A website that displays my personality, interests, projects, and experiences on a centralized and aesthetic platform.'
+            description='A website that showcases my skills, projects, personality and achievements 
+            with a visually appealing and responsive interface. Coded with Vite, React, and TailwindCSS.'
             link='https://github.com/ledanielhuynh/ledanielhuynh.github.io'
           />
 
