@@ -7,15 +7,14 @@ const Hero = () => {
     <div className="flex md:flex-row flex-col space-x-4 justify-center items-center md:px-16 px-12 max-w-screen-xl bg-zinc-900 rounded-2xl">
       <div className="flex flex-col space-y-8 md:py-12 py-8 md:w-2/3 w-full">
         <div className="text-6xl text-white font-bold">
-          <div className="flex flex-row">
+          <div className="flex items-center md:h-16 h-32">
             <Typewriter
               options={{
-                strings: ["HELLO", "XIN CHÀO", "안녕하세요", "こんにちは"],
+                strings: ["HELLO!", "XIN CHÀO!", "안녕하세요!", "こんにちは!"],
                 autoStart: true,
                 loop: true,
               }}
             />
-            <p>,</p>
           </div>
           <h1>DANIEL HERE!</h1>
         </div>
