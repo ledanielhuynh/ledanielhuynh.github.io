@@ -49,7 +49,7 @@ const projects = [
   },
   {
     category: "CASE STUDY",
-    logo: github,
+    logo: figma,
     image: pearler,
     title: "HOLD",
     description:
