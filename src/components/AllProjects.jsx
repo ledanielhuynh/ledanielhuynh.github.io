@@ -8,11 +8,11 @@ import rissk from "../assets/rissk.png";
 import destinate from "../assets/destinate.png";
 import dailyui from "../assets/dailyui.png";
 import wit from "../assets/wit.png";
+import pearler from "../assets/pearler.png";
 
 const projects = [
   {
     category: "FRONTEND",
-    section: "development",
     logo: github,
     image: website,
     title: "PORTFOLIO WEBSITE",
@@ -21,53 +21,57 @@ const projects = [
     link: "https://github.com/ledanielhuynh/ledanielhuynh.github.io",
   },
   {
-    category: "UX/UI DESIGN",
-    section: "design",
-    logo: figma,
-    image: unilectives,
-    title: "UNI-LECTIVES",
-    description:
-      "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://ledanielhuynh.github.io/",
-  },
-  {
-    category: "CASE STUDY",
-    section: "design",
-    logo: figma,
-    image: rissk,
-    title: "RISSK.",
-    description:
-      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "https://ledanielhuynh.github.io/",
-  },
-  {
-    category: "CASE STUDY",
-    section: "design",
-    logo: figma,
-    image: destinate,
-    title: "DESTINATE",
-    description:
-      "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "https://ledanielhuynh.github.io/",
-  },
-  {
-    category: "UX/UI DESIGN",
-    section: "design",
-    logo: figma,
-    image: dailyui,
-    title: "DAILY UI",
-    description: "A design challenge that presents daily prompts for designing user interfaces.",
-    link: "https://ledanielhuynh.github.io/",
-  },
-  {
     category: "FRONTEND",
-    section: "development",
     logo: github,
     image: wit,
     title: "WIT EMP WEBSITE",
     description:
       "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
     link: "https://github.com/unswwit/emp-website",
+  },
+  {
+    category: "CASE STUDY",
+    logo: figma,
+    image: rissk,
+    title: "RISSK.",
+    description:
+      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
+    link: "https://www.figma.com/proto/3gEb7AjZCl4C6Dy1BvXAWI/RISSK?page-id=143%3A1735&type=design&node-id=143-1737&viewport=986%2C656%2C0.88&scaling=min-zoom&starting-point-node-id=143%3A1737&show-proto-sidebar=1",
+  },
+  {
+    category: "CASE STUDY",
+    logo: figma,
+    image: destinate,
+    title: "DESTINATE",
+    description:
+      "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
+    link: "https://www.figma.com/proto/RsfnPghJCn86WPOHGsLTVk/DESTINATE?page-id=1%3A1773&type=design&node-id=1-1780&viewport=1359%2C616%2C0.49&scaling=min-zoom&starting-point-node-id=1%3A1780&show-proto-sidebar=1",
+  },
+  {
+    category: "CASE STUDY",
+    logo: github,
+    image: pearler,
+    title: "HOLD",
+    description:
+      "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
+    link: "https://www.figma.com/proto/lTAcdy374kIZjqnTOC8y2V/HOLD?page-id=202%3A30&type=design&node-id=202-32&viewport=1069%2C790%2C0.76&scaling=min-zoom&starting-point-node-id=202%3A32&show-proto-sidebar=1",
+  },
+  {
+    category: "UX/UI DESIGN",
+    logo: figma,
+    image: unilectives,
+    title: "UNI-LECTIVES",
+    description:
+      "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
+    link: "https://www.figma.com/file/h2OXZG9l4nfVZCmzDt72r1/UNI-LECTIVES?type=design&node-id=0%3A1&t=geO8JeG9LtO0oD54-1",
+  },
+  {
+    category: "UX/UI DESIGN",
+    logo: figma,
+    image: dailyui,
+    title: "DAILY UI",
+    description: "A design challenge that presents daily prompts for designing user interfaces.",
+    link: "https://ledanielhuynh.github.io/",
   },
 ];
 

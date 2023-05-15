@@ -25,7 +25,7 @@ const projects = [
     title: "UNI-LECTIVES",
     description:
       "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://ledanielhuynh.github.io/",
+    link: "https://www.figma.com/file/h2OXZG9l4nfVZCmzDt72r1/UNI-LECTIVES?type=design&node-id=0%3A1&t=geO8JeG9LtO0oD54-1",
   },
   {
     category: "CASE STUDY",
@@ -34,7 +34,7 @@ const projects = [
     title: "RISSK.",
     description:
       "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "https://ledanielhuynh.github.io/",
+    link: "https://www.figma.com/proto/3gEb7AjZCl4C6Dy1BvXAWI/RISSK?page-id=143%3A1735&type=design&node-id=143-1737&viewport=986%2C656%2C0.88&scaling=min-zoom&starting-point-node-id=143%3A1737&show-proto-sidebar=1",
   },
   {
     category: "CASE STUDY",
@@ -44,7 +44,7 @@ const projects = [
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "https://ledanielhuynh.github.io/",
+    link: "https://www.figma.com/proto/RsfnPghJCn86WPOHGsLTVk/DESTINATE?page-id=1%3A1773&type=design&node-id=1-1780&viewport=1359%2C616%2C0.49&scaling=min-zoom&starting-point-node-id=1%3A1780&show-proto-sidebar=1",
   },
 ];
 
