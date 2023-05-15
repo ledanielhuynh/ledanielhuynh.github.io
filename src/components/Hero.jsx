@@ -4,10 +4,10 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="flex md:flex-row flex-col space-x-4 justify-center items-center md:px-16 px-12 max-w-screen-xl bg-zinc-900 rounded-2xl">
-      <div className="flex flex-col space-y-8 md:py-12 py-8 md:w-2/3 w-full">
-        <div className="text-6xl text-white font-bold">
-          <div className="flex items-center md:h-16 h-32">
+    <div className="flex max-w-screen-xl flex-col items-center justify-center space-x-4 rounded-2xl bg-zinc-900 px-12 md:flex-row md:px-16">
+      <div className="flex w-full flex-col space-y-8 py-8 md:w-2/3 md:py-12">
+        <div className="text-6xl font-bold text-white">
+          <div className="flex h-32 items-center md:h-16">
             <Typewriter
               options={{
                 strings: ["HELLO!", "XIN CHÀO!", "안녕하세요!", "こんにちは!"],
@@ -18,14 +18,14 @@ const Hero = () => {
           </div>
           <h1>DANIEL HERE!</h1>
         </div>
-        <ul className="md:text-xl text-lg text-zinc-300">
+        <ul className="text-lg text-zinc-300 md:text-xl">
           {" "}
           I am currently a Computer Science student at UNSW who is aspiring to become a unicorn
           developer! In saying this, I am looking to pursue a career in product design and/or
           front-end development.
         </ul>
       </div>
-      <img src={danielhello} alt="Daniel Memoji" className="md:w-1/3 md:h-1/3 w-full" />
+      <img src={danielhello} alt="Daniel Memoji" className="w-full md:h-1/3 md:w-1/3" />
     </div>
   );
 };

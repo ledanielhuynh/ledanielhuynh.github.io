@@ -19,55 +19,55 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-75 backdrop-blur rounded-b-2xl text-white">
-      <div className="flex flex-row justify-between items-center max-w-screen-xl mx-auto px-12 py-6">
+    <nav className="fixed left-0 top-0 w-full rounded-b-2xl bg-black bg-opacity-75 text-white backdrop-blur">
+      <div className="mx-auto flex max-w-screen-xl flex-row items-center justify-between px-12 py-6">
         <img
           src={logo}
           alt="D/H Logo"
           className="h-8 cursor-pointer"
           onClick={() => (window.location.href = "/")}
         />
-        <ul className="hidden md:flex gap-8 text-white font-bold text-xl">
+        <ul className="hidden gap-8 text-xl font-bold text-white md:flex">
           <li
             className={`p-2 ${
-              location.pathname === "/work" ? "underline underline-offset-4 decoration-2" : ""
+              location.pathname === "/work" ? "underline decoration-2 underline-offset-4" : ""
             }`}
           >
             <Link
               to="/work"
-              className="hover:duration-400 ease-out hover:underline hover:underline-offset-4 hover:decoration-2"
+              className="hover:duration-400 ease-out hover:underline hover:decoration-2 hover:underline-offset-4"
             >
               WORK
             </Link>
           </li>
           <li
             className={`p-2 ${
-              location.pathname === "/aboutme" ? "underline underline-offset-4 decoration-2" : ""
+              location.pathname === "/aboutme" ? "underline decoration-2 underline-offset-4" : ""
             }`}
           >
             <Link
               to="/aboutme"
-              className="hover:duration-400 ease-out hover:underline hover:underline-offset-4 hover:decoration-2"
+              className="hover:duration-400 ease-out hover:underline hover:decoration-2 hover:underline-offset-4"
             >
               ABOUT ME
             </Link>
           </li>
-          <li className="flex flex-row items-center border-2 border-zinc-500 rounded-full px-2 bg-transparent cursor-pointer hover:bg-zinc-600 hover:duration-300 ease-out">
+          <li className="flex cursor-pointer flex-row items-center rounded-full border-2 border-zinc-500 bg-transparent px-2 ease-out hover:bg-zinc-600 hover:duration-300">
             <span className="p-2" onClick={openResume}>
               RESUME
             </span>
-            <img src={arrowupright} alt="Resume Link" className="text-white filter invert h-6" />
+            <img src={arrowupright} alt="Resume Link" className="h-6 text-white invert filter" />
           </li>
         </ul>
-        <div onClick={handleNav} className="block text-white filter invert md:hidden">
+        <div onClick={handleNav} className="block text-white invert filter md:hidden">
           {nav ? <img src={x} alt="Exit Menu" /> : <img src={menu} alt="Menu" />}
         </div>
         <ul
-          className={`fixed left-0 top-0 w-3/5 h-screen bg-zinc-950 bg-opacity-95 ease-out duration-500 ${
+          className={`fixed left-0 top-0 h-screen w-3/5 bg-zinc-950 bg-opacity-95 duration-500 ease-out ${
             nav ? "" : "left-[-60%]"
           }`}
         >
-          <div className="flex flex-row justify-between items-center max-w-screen-2xl mx-auto px-12 py-6">
+          <div className="mx-auto flex max-w-screen-2xl flex-row items-center justify-between px-12 py-6">
             <img
               src={logo}
               alt="D/H Logo"
@@ -75,18 +75,18 @@ const Navbar = () => {
               onClick={() => (window.location.href = "/")}
             />
           </div>
-          <li className="font-bold px-12 py-6 border-y border-zinc-800">
+          <li className="border-y border-zinc-800 px-12 py-6 font-bold">
             <Link to="/work">WORK</Link>
           </li>
-          <li className="font-bold px-12 py-6 border-b border-zinc-800">
+          <li className="border-b border-zinc-800 px-12 py-6 font-bold">
             <Link to="/aboutme">ABOUT ME</Link>
           </li>
-          <li className="font-bold px-8 py-6 border-b border-zinc-800">
-            <div className="flex flex-row items-center border-2 border-zinc-500 rounded-full px-2 w-fit">
+          <li className="border-b border-zinc-800 px-8 py-6 font-bold">
+            <div className="flex w-fit flex-row items-center rounded-full border-2 border-zinc-500 px-2">
               <span className="p-2" onClick={openResume}>
                 RESUME
               </span>
-              <img src={arrowupright} alt="Resume Link" className="text-white filter invert h-6" />
+              <img src={arrowupright} alt="Resume Link" className="h-6 text-white invert filter" />
             </div>
           </li>
         </ul>

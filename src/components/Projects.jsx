@@ -6,7 +6,6 @@ import website from "../assets/website.png";
 import unilectives from "../assets/unilectives.png";
 import rissk from "../assets/rissk.png";
 import destinate from "../assets/destinate.png";
-import dailyui from "../assets/dailyui.png";
 
 const projects = [
   {
@@ -38,7 +37,6 @@ const projects = [
   },
   {
     category: "CASE STUDY",
-    section: "design",
     logo: figma,
     image: destinate,
     title: "DESTINATE",
@@ -60,22 +58,22 @@ const ProjectCard = ({ index, category, image, logo, title, description, link })
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col p-8 space-y-8 bg-zinc-900 rounded-2xl hover:bg-zinc-950 transition duration-300 ease-out cursor-pointer"
+      className="flex cursor-pointer flex-col space-y-8 rounded-2xl bg-zinc-900 p-8 transition duration-300 ease-out hover:bg-zinc-950"
       onClick={handleCardClick}
     >
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row items-center justify-between">
         <div className="space-y-2">
-          <h1 className="font-bold text-4xl text-white">{projectNumber}</h1>
-          <h1 className="font-bold text-xl text-zinc-500">{category}</h1>
+          <h1 className="text-4xl font-bold text-white">{projectNumber}</h1>
+          <h1 className="text-xl font-bold text-zinc-500">{category}</h1>
         </div>
-        <div className="w-16 h-16 bg-zinc-800 rounded-xl flex justify-center place-content-center p-4">
+        <div className="flex h-16 w-16 place-content-center justify-center rounded-xl bg-zinc-800 p-4">
           <img src={logo} alt={category} />
         </div>
       </div>
-      <img src={image} alt={`${title} Mockup`} className="rounded-xl" />
+      <img src={image} alt={"${title} Mockup"} className="rounded-xl" />
       <div className="space-y-2">
-        <h1 className="font-bold text-3xl text-white">{title}</h1>
-        <ul className="md:text-lg text-base text-zinc-300">{description}</ul>
+        <h1 className="text-3xl font-bold text-white">{title}</h1>
+        <ul className="text-base text-zinc-300 md:text-lg">{description}</ul>
       </div>
     </motion.div>
   );
@@ -84,25 +82,22 @@ const ProjectCard = ({ index, category, image, logo, title, description, link })
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [showCards, setShowCards] = useState(false);
-  const [selectedSection, setSelectedSection] = useState("");
 
   useEffect(() => {
     setTimeout(() => {
       setShowCards(true);
     }, 500);
-  }, [selectedCategory, selectedSection]);
+  }, [selectedCategory]);
 
   const filteredProjects =
     selectedCategory === ""
-      ? selectedSection === ""
-        ? projects
-        : projects.filter((project) => project.section === selectedSection)
+      ? projects
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="flex flex-col space-y-12 justify-start items-center max-w-screen-xl">
+    <div className="flex max-w-screen-xl flex-col items-center justify-start space-y-12">
       <div className="space-y-4">
-        <div className="grid md:grid-cols-2 grid-rows-1 gap-4 max-w-screen-xl">
+        <div className="grid max-w-screen-xl grid-rows-1 gap-4 md:grid-cols-2">
           <AnimatePresence>
             {showCards &&
               filteredProjects.map((project, index) => (
@@ -117,7 +112,6 @@ const Projects = () => {
                   <ProjectCard
                     index={index}
                     category={project.category}
-                    section={project.section}
                     logo={project.logo}
                     image={project.image}
                     title={project.title}

@@ -87,22 +87,22 @@ const ProjectCard = ({ index, category, image, logo, title, description, link })
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex flex-col p-8 space-y-8 bg-zinc-900 rounded-2xl hover:bg-zinc-950 transition duration-300 ease-out cursor-pointer"
+      className="flex cursor-pointer flex-col space-y-8 rounded-2xl bg-zinc-900 p-8 transition duration-300 ease-out hover:bg-zinc-950"
       onClick={handleCardClick}
     >
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row items-center justify-between">
         <div className="space-y-2">
-          <h1 className="font-bold text-4xl text-white">{projectNumber}</h1>
-          <h1 className="font-bold text-xl text-zinc-500">{category}</h1>
+          <h1 className="text-4xl font-bold text-white">{projectNumber}</h1>
+          <h1 className="text-xl font-bold text-zinc-500">{category}</h1>
         </div>
-        <div className="w-16 h-16 bg-zinc-800 rounded-xl flex justify-center place-content-center p-4">
+        <div className="flex h-16 w-16 place-content-center justify-center rounded-xl bg-zinc-800 p-4">
           <img src={logo} alt={category} />
         </div>
       </div>
       <img src={image} alt={`${title} Mockup`} className="rounded-xl" />
       <div className="space-y-2">
-        <h1 className="font-bold text-3xl text-white">{title}</h1>
-        <ul className="md:text-lg text-base text-zinc-300">{description}</ul>
+        <h1 className="text-3xl font-bold text-white">{title}</h1>
+        <ul className="text-base text-zinc-300 md:text-lg">{description}</ul>
       </div>
     </motion.div>
   );
@@ -133,19 +133,19 @@ const AllProjects = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="flex flex-col space-y-12 justify-start items-center max-w-screen-xl">
+    <div className="flex max-w-screen-xl flex-col items-center justify-start space-y-12">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         className="flex"
       >
-        <div className="space-x-4 justify-center items-center md:px-16 px-12 max-w-screen-xl bg-zinc-900 rounded-2xl">
-          <div className="flex flex-col space-y-8 md:py-12 py-8 w-full">
-            <div className="text-6xl text-white font-bold">
+        <div className="max-w-screen-xl items-center justify-center space-x-4 rounded-2xl bg-zinc-900 px-12 md:px-16">
+          <div className="flex w-full flex-col space-y-8 py-8 md:py-12">
+            <div className="text-6xl font-bold text-white">
               <h1>PROJECTS</h1>
             </div>
-            <ul className="md:text-xl text-lg text-zinc-300">
+            <ul className="text-lg text-zinc-300 md:text-xl">
               Below consist of the work I am most proud of throughout the years. Ranging from case
               studies to UX/UI design projects, each one highlights my passion for technology,
               expertise in relevant software, and overall drive to create a positive impact.
@@ -154,7 +154,7 @@ const AllProjects = () => {
         </div>
       </motion.div>
       <div className="space-y-4">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-rows-1 gap-4 max-w-screen-xl">
+        <div className="grid max-w-screen-xl grid-rows-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           <AnimatePresence>
             {showCards &&
               filteredProjects.map((project, index) => (

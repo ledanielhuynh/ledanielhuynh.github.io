@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <Router>
-      <div className="flex flex-col justify-between min-h-screen space-y-24 items-center font-tt">
+      <div className="flex min-h-screen flex-col items-center justify-between space-y-24 font-tt">
         <Navbar />
         <ScrollToTop />
         <Routes>
