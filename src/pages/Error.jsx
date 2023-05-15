@@ -11,8 +11,8 @@ const Error = () => {
       </div>
       <h2 className="text-6xl">Page not found</h2>
       <p className="text-2xl pt-8 text-center">
-        The page you're looking for has either vanished into the digital<br></br>
-        abyss or in the land of procrastination. Hopefully I can address<br></br>
+        The page you're looking for has vanished into either the digital<br></br>
+        abyss or the land of procrastination. Hopefully I can address<br></br>
         the issue soon! 🫡
       </p>
     </div>
