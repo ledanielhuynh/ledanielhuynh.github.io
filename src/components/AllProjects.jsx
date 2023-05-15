@@ -12,6 +12,7 @@ import wit from "../assets/wit.png";
 const projects = [
   {
     category: "FRONTEND",
+    section: "development",
     logo: github,
     image: website,
     title: "PORTFOLIO WEBSITE",
@@ -20,16 +21,18 @@ const projects = [
     link: "https://github.com/ledanielhuynh/ledanielhuynh.github.io",
   },
   {
-    category: "FRONTEND",
-    logo: github,
-    image: wit,
-    title: "WIT EMP WEBSITE",
+    category: "UX/UI DESIGN",
+    section: "design",
+    logo: figma,
+    image: unilectives,
+    title: "UNI-LECTIVES",
     description:
-      "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
-    link: "https://github.com/unswwit/emp-website",
+      "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
+    link: "https://ledanielhuynh.github.io/",
   },
   {
     category: "CASE STUDY",
+    section: "design",
     logo: figma,
     image: rissk,
     title: "RISSK.",
@@ -39,6 +42,7 @@ const projects = [
   },
   {
     category: "CASE STUDY",
+    section: "design",
     logo: figma,
     image: destinate,
     title: "DESTINATE",
@@ -48,20 +52,22 @@ const projects = [
   },
   {
     category: "UX/UI DESIGN",
-    logo: figma,
-    image: unilectives,
-    title: "UNI-LECTIVES",
-    description:
-      "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://ledanielhuynh.github.io/",
-  },
-  {
-    category: "UX/UI DESIGN",
+    section: "design",
     logo: figma,
     image: dailyui,
     title: "DAILY UI",
     description: "A design challenge that presents daily prompts for designing user interfaces.",
     link: "https://ledanielhuynh.github.io/",
+  },
+  {
+    category: "FRONTEND",
+    section: "development",
+    logo: github,
+    image: wit,
+    title: "WIT EMP WEBSITE",
+    description:
+      "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
+    link: "https://github.com/unswwit/emp-website",
   },
 ];
 
@@ -136,10 +142,9 @@ const AllProjects = () => {
               <h1>PROJECTS</h1>
             </div>
             <ul className="md:text-xl text-lg text-zinc-300">
-              These projects are a reflection of the work I am most proud of throughout the years.
-              Ranging from case competition case studies to UX/UI design projects, each one
-              highlights my passion for technology, expertise in relevant software, and overall
-              drive to create a positive impact.
+              Below consist of the work I am most proud of throughout the years. Ranging from case
+              studies to UX/UI design projects, each one highlights my passion for technology,
+              expertise in relevant software, and overall drive to create a positive impact.
             </ul>
           </div>
         </div>

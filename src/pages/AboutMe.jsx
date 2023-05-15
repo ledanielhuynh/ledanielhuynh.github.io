@@ -1,10 +1,8 @@
-import React from 'react'
-import Error from './Error';
+import React from "react";
+import Error from "./Error";
 
 const AboutMe = () => {
-    return (
-        <Error/>
-      )
-    }
+  return <Error />;
+};
 
-export default AboutMe
+export default AboutMe;

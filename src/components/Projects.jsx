@@ -7,12 +7,10 @@ import unilectives from "../assets/unilectives.png";
 import rissk from "../assets/rissk.png";
 import destinate from "../assets/destinate.png";
 import dailyui from "../assets/dailyui.png";
-import wit from "../assets/wit.png";
 
 const projects = [
   {
     category: "FRONTEND",
-    section: "development",
     logo: github,
     image: website,
     title: "PORTFOLIO WEBSITE",
@@ -22,7 +20,6 @@ const projects = [
   },
   {
     category: "UX/UI DESIGN",
-    section: "design",
     logo: figma,
     image: unilectives,
     title: "UNI-LECTIVES",
@@ -32,7 +29,6 @@ const projects = [
   },
   {
     category: "CASE STUDY",
-    section: "design",
     logo: figma,
     image: rissk,
     title: "RISSK.",
@@ -50,18 +46,9 @@ const projects = [
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
     link: "https://ledanielhuynh.github.io/",
   },
-  {
-    category: "UX/UI DESIGN",
-    section: "design",
-    logo: figma,
-    image: dailyui,
-    title: "DAILY UI",
-    description: "A design challenge that presents daily prompts for designing user interfaces.",
-    link: "https://ledanielhuynh.github.io/",
-  },
 ];
 
-const ProjectCard = ({ index, category, section, image, logo, title, description, link }) => {
+const ProjectCard = ({ index, category, image, logo, title, description, link }) => {
   const handleCardClick = () => {
     window.open(link, "_blank");
   };
@@ -99,12 +86,6 @@ const Projects = () => {
   const [showCards, setShowCards] = useState(false);
   const [selectedSection, setSelectedSection] = useState("");
 
-  const handleSectionSelect = (section) => {
-    setSelectedSection(section);
-    setSelectedCategory("");
-    setShowCards(false);
-  };
-
   useEffect(() => {
     setTimeout(() => {
       setShowCards(true);
@@ -124,33 +105,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 grid-rows-1 gap-4 max-w-screen-xl">
           <AnimatePresence>
             {showCards &&
-              filteredProjects.slice(0, 2).map((project, index) => (
-                <motion.div
-                  key={"project-${index}"}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.2 }}
-                  exit={{ opacity: 0, y: 50 }}
-                  className="flex"
-                >
-                  <ProjectCard
-                    index={index}
-                    category={project.category}
-                    section={project.section}
-                    logo={project.logo}
-                    image={project.image}
-                    title={project.title}
-                    description={project.description}
-                    link={project.link}
-                  />
-                </motion.div>
-              ))}
-          </AnimatePresence>
-        </div>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-rows-1 gap-4 max-w-screen-xl">
-          <AnimatePresence>
-            {showCards &&
-              filteredProjects.slice(2).map((project, index) => (
+              filteredProjects.map((project, index) => (
                 <motion.div
                   key={"project-${index}"}
                   initial={{ opacity: 0, y: 50 }}
