@@ -1,9 +1,11 @@
 import React from 'react'
-import Error from './Error';
+import ProjectsFull from '../components/ProjectsFull';
 
 const Work = () => {
   return (
-    <Error/>
+    <div className='pt-12 px-8'>
+      <ProjectsFull />
+    </div>
   )
 }
 
