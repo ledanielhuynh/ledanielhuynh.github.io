@@ -1,10 +1,10 @@
 import React from 'react'
-import ProjectsFull from '../components/ProjectsFull';
+import AllProjects from '../components/AllProjects';
 
 const Work = () => {
   return (
     <div className='pt-12 px-8'>
-      <ProjectsFull />
+      <AllProjects />
     </div>
   )
 }

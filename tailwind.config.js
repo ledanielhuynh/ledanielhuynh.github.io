@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-theme: {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
     extend: {
       fontFamily: {
-        'tt': ['TT Commons', 'sans-serif']
+        tt: ["TT Commons", "sans-serif"],
       },
     },
   },

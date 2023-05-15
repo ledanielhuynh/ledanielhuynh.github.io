@@ -12,7 +12,6 @@ import wit from "../assets/wit.png";
 const projects = [
   {
     category: "FRONTEND",
-    section: "development",
     logo: github,
     image: website,
     title: "PORTFOLIO WEBSITE",
@@ -21,18 +20,16 @@ const projects = [
     link: "https://github.com/ledanielhuynh/ledanielhuynh.github.io",
   },
   {
-    category: "UX/UI DESIGN",
-    section: "design",
-    logo: figma,
-    image: unilectives,
-    title: "UNI-LECTIVES",
+    category: "FRONTEND",
+    logo: github,
+    image: wit,
+    title: "WIT EMP WEBSITE",
     description:
-      "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://ledanielhuynh.github.io/",
+      "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
+    link: "https://github.com/unswwit/emp-website",
   },
   {
     category: "CASE STUDY",
-    section: "design",
     logo: figma,
     image: rissk,
     title: "RISSK.",
@@ -42,7 +39,6 @@ const projects = [
   },
   {
     category: "CASE STUDY",
-    section: "design",
     logo: figma,
     image: destinate,
     title: "DESTINATE",
@@ -52,7 +48,15 @@ const projects = [
   },
   {
     category: "UX/UI DESIGN",
-    section: "design",
+    logo: figma,
+    image: unilectives,
+    title: "UNI-LECTIVES",
+    description:
+      "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
+    link: "https://ledanielhuynh.github.io/",
+  },
+  {
+    category: "UX/UI DESIGN",
     logo: figma,
     image: dailyui,
     title: "DAILY UI",
@@ -61,7 +65,7 @@ const projects = [
   },
 ];
 
-const ProjectCard = ({ index, category, section, image, logo, title, description, link }) => {
+const ProjectCard = ({ index, category, image, logo, title, description, link }) => {
   const handleCardClick = () => {
     window.open(link, "_blank");
   };
@@ -94,7 +98,7 @@ const ProjectCard = ({ index, category, section, image, logo, title, description
   );
 };
 
-const Projects = () => {
+const AllProjects = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [showCards, setShowCards] = useState(false);
   const [selectedSection, setSelectedSection] = useState("");
@@ -120,37 +124,31 @@ const Projects = () => {
 
   return (
     <div className="flex flex-col space-y-12 justify-start items-center max-w-screen-xl">
-      <div className="space-y-4">
-        <div className="grid md:grid-cols-2 grid-rows-1 gap-4 max-w-screen-xl">
-          <AnimatePresence>
-            {showCards &&
-              filteredProjects.slice(0, 2).map((project, index) => (
-                <motion.div
-                  key={"project-${index}"}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.2 }}
-                  exit={{ opacity: 0, y: 50 }}
-                  className="flex"
-                >
-                  <ProjectCard
-                    index={index}
-                    category={project.category}
-                    section={project.section}
-                    logo={project.logo}
-                    image={project.image}
-                    title={project.title}
-                    description={project.description}
-                    link={project.link}
-                  />
-                </motion.div>
-              ))}
-          </AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="flex"
+      >
+        <div className="space-x-4 justify-center items-center md:px-16 px-12 max-w-screen-xl bg-zinc-900 rounded-2xl">
+          <div className="flex flex-col space-y-8 md:py-12 py-8 w-full">
+            <div className="text-6xl text-white font-bold">
+              <h1>PROJECTS</h1>
+            </div>
+            <ul className="md:text-xl text-lg text-zinc-300">
+              These projects are a reflection of the work I am most proud of throughout the years.
+              Ranging from case competition case studies to UX/UI design projects, each one
+              highlights my passion for technology, expertise in relevant software, and overall
+              drive to create a positive impact.
+            </ul>
+          </div>
         </div>
+      </motion.div>
+      <div className="space-y-4">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-rows-1 gap-4 max-w-screen-xl">
           <AnimatePresence>
             {showCards &&
-              filteredProjects.slice(2).map((project, index) => (
+              filteredProjects.map((project, index) => (
                 <motion.div
                   key={"project-${index}"}
                   initial={{ opacity: 0, y: 50 }}
@@ -178,4 +176,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default AllProjects;
