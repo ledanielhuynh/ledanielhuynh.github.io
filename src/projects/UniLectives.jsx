@@ -1,7 +1,7 @@
 import React from "react";
 import Error from "../pages/Error";
 
-const Hold = () => {
+const UniLectives = () => {
   return (
     <div className="pt-36">
       <Error />
@@ -9,4 +9,4 @@ const Hold = () => {
   );
 };
 
-export default Hold;
+export default UniLectives;

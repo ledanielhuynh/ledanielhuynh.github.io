@@ -27,7 +27,7 @@ const projects = [
     title: "UNI-LECTIVES",
     description:
       "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "/error",
+    link: "/unilectives",
   },
   {
     category: "CASE STUDY",
@@ -45,7 +45,7 @@ const projects = [
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "/error",
+    link: "/destinate",
   },
 ];
 
