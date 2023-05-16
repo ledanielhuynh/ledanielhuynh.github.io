@@ -153,7 +153,7 @@ const AllProjects = () => {
               <h1>PROJECTS</h1>
             </div>
             <ul className="text-xl text-zinc-300 md:text-2xl">
-              Below consist of the work I am most proud of throughout the years. Ranging from case
+              Below consists of the work I am most proud of throughout the years. Ranging from case
               studies to UX/UI design projects, each one highlights my passion for technology,
               expertise in relevant software, and overall drive to create a positive impact.
             </ul>
