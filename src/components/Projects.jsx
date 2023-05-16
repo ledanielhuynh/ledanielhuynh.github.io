@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 import github from "../assets/github.svg";
 import figma from "../assets/figma.svg";
+
 import website from "../assets/website.png";
 import unilectives from "../assets/unilectives.png";
 import rissk from "../assets/rissk.png";
@@ -24,7 +27,7 @@ const projects = [
     title: "UNI-LECTIVES",
     description:
       "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://www.figma.com/file/h2OXZG9l4nfVZCmzDt72r1/UNI-LECTIVES?type=design&node-id=0%3A1&t=geO8JeG9LtO0oD54-1",
+    link: "https://www.figma.com/file/h2OXZG9l4nfVZCmzDt72r1/UNI-LECTIVES?type=design&node-id=0%3A1&t=KbsG5UrUfFIncSeX-1",
   },
   {
     category: "CASE STUDY",
@@ -33,7 +36,7 @@ const projects = [
     title: "RISSK.",
     description:
       "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "https://www.figma.com/proto/3gEb7AjZCl4C6Dy1BvXAWI/RISSK?page-id=143%3A1735&type=design&node-id=143-1737&viewport=986%2C656%2C0.88&scaling=min-zoom&starting-point-node-id=143%3A1737&show-proto-sidebar=1",
+    link: "/rissk",
   },
   {
     category: "CASE STUDY",
@@ -42,13 +45,19 @@ const projects = [
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "https://www.figma.com/proto/RsfnPghJCn86WPOHGsLTVk/DESTINATE?page-id=1%3A1773&type=design&node-id=1-1780&viewport=1359%2C616%2C0.49&scaling=min-zoom&starting-point-node-id=1%3A1780&show-proto-sidebar=1",
+    link: "/destinate",
   },
 ];
 
 const ProjectCard = ({ index, category, image, logo, title, description, link }) => {
+  const navigate = useNavigate();
+
   const handleCardClick = () => {
-    window.open(link, "_blank");
+    if (link.startsWith("http")) {
+      window.open(link, "_blank");
+    } else {
+      navigate(link);
+    }
   };
 
   const projectNumber = (index + 1).toString().padStart(2, "0");
@@ -64,16 +73,16 @@ const ProjectCard = ({ index, category, image, logo, title, description, link })
       <div className="flex flex-row items-center justify-between">
         <div className="space-y-2">
           <h1 className="text-4xl font-bold text-white">{projectNumber}</h1>
-          <h1 className="text-xl font-bold text-zinc-500">{category}</h1>
+          <h1 className="text-2xl font-bold text-zinc-500">{category}</h1>
         </div>
         <div className="flex h-16 w-16 place-content-center justify-center rounded-xl bg-zinc-800 p-4">
           <img src={logo} alt={category} />
         </div>
       </div>
-      <img src={image} alt={"${title} Mockup"} className="rounded-xl" />
+      <img src={image} alt={`${title} Mock up`} className="rounded-xl" />
       <div className="space-y-2">
         <h1 className="text-3xl font-bold text-white">{title}</h1>
-        <ul className="text-base text-zinc-300 md:text-lg">{description}</ul>
+        <ul className="text-lg text-zinc-300 md:text-xl">{description}</ul>
       </div>
     </motion.div>
   );

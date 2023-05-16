@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed left-0 top-0 w-full rounded-b-2xl bg-black bg-opacity-75 text-white backdrop-blur">
+    <nav className="fixed left-0 top-0 w-full rounded-b-2xl bg-black bg-opacity-80 text-white backdrop-blur-lg">
       <div className="mx-auto flex max-w-screen-xl flex-row items-center justify-between px-12 py-6">
         <img
           src={logo}
