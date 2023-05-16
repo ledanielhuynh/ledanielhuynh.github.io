@@ -27,7 +27,7 @@ const projects = [
     title: "UNI-LECTIVES",
     description:
       "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://www.figma.com/file/h2OXZG9l4nfVZCmzDt72r1/UNI-LECTIVES?type=design&node-id=0%3A1&t=KbsG5UrUfFIncSeX-1",
+    link: "/error",
   },
   {
     category: "CASE STUDY",
@@ -45,7 +45,7 @@ const projects = [
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "/destinate",
+    link: "/error",
   },
 ];
 
@@ -114,7 +114,7 @@ const Projects = () => {
                   key={"project-${index}"}
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.4 + index * 0.2 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
                   exit={{ opacity: 0, y: 50 }}
                   className="flex"
                 >

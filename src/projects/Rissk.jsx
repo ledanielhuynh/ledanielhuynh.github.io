@@ -85,13 +85,13 @@ const Rissk = () => {
         </div>
         <motion.div
           ref={ref1}
-          className="grid grid-cols-5 gap-16 border-t py-16"
+          className="grid grid-rows-1 gap-16 border-t py-16 md:grid-cols-2"
           initial="hidden"
           animate={inView1 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="col-span-3 flex flex-col space-y-6">
+          <div className="flex flex-col space-y-6">
             <h1 className="text-3xl font-bold">OVERVIEW</h1>
             <p>
               As a part of Microsoft Protégé, I worked with a team as digital consultants to develop
@@ -103,7 +103,7 @@ const Rissk = () => {
               further relevant research to make the solution more user-oriented.
             </p>
           </div>
-          <div className="col-span-2 flex flex-col space-y-6">
+          <div className="flex flex-col space-y-6">
             <h1 className="text-3xl font-bold">ROLE</h1>
             <div>
               <div className="flex flex-row gap-4">
@@ -278,7 +278,7 @@ const Rissk = () => {
         </motion.div>
         <motion.div
           ref={ref8}
-          className="grid grid-cols-2 p-16"
+          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
           initial="hidden"
           animate={inView8 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -298,14 +298,15 @@ const Rissk = () => {
               <p>-</p>
               <p>
                 Users can receive real-time alerts about flood conditions, evacuation orders, road
-                closures, and other relevant information to ensure their safety and preparedness.
+                closures, and already available resources on preparing for floods to ensure their
+                safety and preparedness.
               </p>
             </div>
           </div>
         </motion.div>
         <motion.div
           ref={ref9}
-          className="grid grid-cols-2 p-16"
+          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
           initial="hidden"
           animate={inView9 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -316,9 +317,13 @@ const Rissk = () => {
             <div className="flex flex-row gap-4">
               <p>-</p>
               <p>
-                Provide real-time insights and updates about evacuation centers in the affected
-                areas.
+                Provide real-time insights and updates about all nearby evacuation centres in the
+                affected area.
               </p>
+            </div>
+            <div className="flex flex-row gap-4">
+              <p>-</p>
+              <p>Recommends most appropriate locations based on individual user.</p>
             </div>
             <div className="flex flex-row gap-4">
               <p>-</p>
@@ -333,7 +338,7 @@ const Rissk = () => {
         </motion.div>
         <motion.div
           ref={ref10}
-          className="grid grid-cols-2 py-16"
+          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
           initial="hidden"
           animate={inView10 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -349,6 +354,13 @@ const Rissk = () => {
             <div className="flex flex-row gap-4">
               <p>-</p>
               <p>
+                Digitalised accessibility to organisations and volunteers that are willing to
+                support.
+              </p>
+            </div>
+            <div className="flex flex-row gap-4">
+              <p>-</p>
+              <p>
                 Users can quickly communicate their safety status to their loved ones or emergency
                 services.
               </p>
@@ -357,7 +369,7 @@ const Rissk = () => {
         </motion.div>
         <motion.div
           ref={ref11}
-          className="grid grid-cols-2 p-16"
+          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
           initial="hidden"
           animate={inView11 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -368,10 +380,14 @@ const Rissk = () => {
             <div className="flex flex-row gap-4">
               <p>-</p>
               <p>
-                Enables users to create and manage personalized profiles within the app in order for
-                volunteers at evacuation centres to have access to information needed when it comes
-                to caring for people of disability.
+                Enables users to create and manage personalized profiles within the app in order to
+                present key medical information about their specific needs to volunteers at
+                evacuation centres.
               </p>
+            </div>
+            <div className="flex flex-row gap-4">
+              <p>-</p>
+              <p>Authentication through Medicare and Mobility Parking Permit.</p>
             </div>
             <div className="flex flex-row gap-4">
               <p>-</p>

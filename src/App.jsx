@@ -10,6 +10,7 @@ import Hold from "./projects/Hold";
 import Brooks from "./projects/Brooks";
 import PernodRicard from "./projects/PernodRicard";
 import Footer from "./components/Footer";
+import Error from "./pages/Error";
 
 const App = () => {
   const ScrollToTop = () => {
@@ -36,6 +37,7 @@ const App = () => {
           <Route exact path="/hold" element={<Hold />} />
           <Route exact path="/brooks" element={<Brooks />} />
           <Route exact path="/pernodricard" element={<PernodRicard />} />
+          <Route exact path="/error" element={<Error />} />
         </Routes>
       </div>
       <div className="pt-12">

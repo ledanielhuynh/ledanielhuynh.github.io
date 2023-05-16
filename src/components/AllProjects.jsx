@@ -46,7 +46,7 @@ const projects = [
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "/destinate",
+    link: "/error",
   },
   {
     category: "CASE STUDY",
@@ -55,7 +55,7 @@ const projects = [
     title: "HOLD",
     description:
       "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
-    link: "/hold",
+    link: "/error",
   },
   {
     category: "UX/UI DESIGN",
@@ -64,7 +64,7 @@ const projects = [
     title: "UNI-LECTIVES",
     description:
       "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "https://www.figma.com/file/h2OXZG9l4nfVZCmzDt72r1/UNI-LECTIVES?type=design&node-id=0%3A1&t=KbsG5UrUfFIncSeX-1",
+    link: "/error",
   },
   {
     category: "UX/UI DESIGN",
@@ -72,7 +72,7 @@ const projects = [
     image: dailyui,
     title: "DAILY UI",
     description: "A design challenge that presents daily prompts for designing user interfaces.",
-    link: "/dailyui",
+    link: "/error",
   },
 ];
 
