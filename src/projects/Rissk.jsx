@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import destinatecover from "../assets/destinatecover.png";
+import rissk from "../assets/rissk.png";
 import risskpersona from "../assets/risskpersona.png";
 import iphone14 from "../assets/iphone14.png";
 
@@ -69,11 +69,7 @@ const Rissk = () => {
   return (
     <div className="flex flex-col place-items-center justify-center text-xl text-white">
       <div className="flex flex-col">
-        <img
-          src={destinatecover}
-          alt="Destinate App Mockup"
-          className="h-screen w-screen object-cover"
-        />
+        <img src={rissk} alt="Rissk App Mockup" className="h-screen w-screen object-cover" />
       </div>
       <div className="flex max-w-screen-xl flex-col justify-center p-8">
         <div className="flex w-full flex-col space-y-8 py-16">
@@ -134,7 +130,7 @@ const Rissk = () => {
             mind, our problem statement was:
           </p>
           <h1 className="text-center text-2xl font-bold">
-            "How can Microsoft leverage Microsoft’s technologies to develop a strategy to address
+            "How might we leverage Microsoft’s technologies to develop a strategy to address
             <br />
             incident management for people with disabilities and carers during floods?"
           </h1>
@@ -354,8 +350,7 @@ const Rissk = () => {
             <div className="flex flex-row gap-4">
               <p>-</p>
               <p>
-                Digitalised accessibility to organisations and volunteers that are willing to
-                support.
+                Digitises accessibility to organisations and volunteers that are willing to support.
               </p>
             </div>
             <div className="flex flex-row gap-4">
