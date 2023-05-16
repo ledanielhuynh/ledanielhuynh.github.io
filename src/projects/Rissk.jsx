@@ -274,7 +274,7 @@ const Rissk = () => {
         </motion.div>
         <motion.div
           ref={ref8}
-          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
+          className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
           animate={inView8 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -302,13 +302,13 @@ const Rissk = () => {
         </motion.div>
         <motion.div
           ref={ref9}
-          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
+          className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
           animate={inView9 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="space-y-2 place-self-center">
+          <div className="order-2 space-y-2 place-self-center md:order-1 ">
             <h1 className="text-3xl font-bold">REAL-TIME INSIGHTS ON EVACUATION CENTRES</h1>
             <div className="flex flex-row gap-4">
               <p>-</p>
@@ -330,11 +330,15 @@ const Rissk = () => {
               </p>
             </div>
           </div>
-          <img src={iphone14} alt="Rissk Mockup" className="w-3/5 place-self-center" />
+          <img
+            src={iphone14}
+            alt="Rissk Mockup"
+            className="order-1 w-3/5 place-self-center md:order-2"
+          />
         </motion.div>
         <motion.div
           ref={ref10}
-          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
+          className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
           animate={inView10 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -364,14 +368,14 @@ const Rissk = () => {
         </motion.div>
         <motion.div
           ref={ref11}
-          className="grid grid-rows-1 gap-16 py-16 md:grid-cols-2"
+          className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
           animate={inView11 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="space-y-2 place-self-center">
-            <h1 className="text-3xl font-bold">PROFILES FOR PEOPLE WITH DISABILITIES</h1>
+          <div className="order-2 space-y-2 place-self-center md:order-1">
+            <h1 className=" text-3xl font-bold">PROFILES FOR PEOPLE WITH DISABILITIES</h1>
             <div className="flex flex-row gap-4">
               <p>-</p>
               <p>
@@ -392,7 +396,11 @@ const Rissk = () => {
               </p>
             </div>
           </div>
-          <img src={iphone14} alt="Rissk Mockup" className="w-3/5 place-self-center" />
+          <img
+            src={iphone14}
+            alt="Rissk Mockup"
+            className="order-1 w-3/5 place-self-center md:order-2"
+          />
         </motion.div>
       </div>
     </div>
