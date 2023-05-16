@@ -3,7 +3,7 @@ import danielsad from "../assets/danielsad.png";
 
 const Error = () => {
   return (
-    <div className="flex flex-col place-items-center justify-center text-white">
+    <div className="flex flex-col place-items-center justify-center font-medium text-white">
       <div className="flex flex-row place-items-center justify-center">
         <h1 className="text-[200px]">4</h1>
         <img src={danielsad} alt="Daniel Memoji" className="w-48" />
