@@ -6,9 +6,9 @@ import figma from "../assets/figma.svg";
 import website from "../assets/website.png";
 import unilectives from "../assets/unilectives.png";
 import rissk from "../assets/rissk.png";
+import wit from "../assets/wit.png";
 import destinate from "../assets/destinate.png";
 import dailyui from "../assets/dailyui.png";
-import wit from "../assets/wit.png";
 import pearler from "../assets/pearler.png";
 
 const projects = [
@@ -40,24 +40,6 @@ const projects = [
     link: "/rissk",
   },
   {
-    category: "CASE STUDY",
-    logo: figma,
-    image: destinate,
-    title: "DESTINATE",
-    description:
-      "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "/destinate",
-  },
-  {
-    category: "CASE STUDY",
-    logo: figma,
-    image: pearler,
-    title: "HOLD",
-    description:
-      "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
-    link: "/hold",
-  },
-  {
     category: "UX/UI DESIGN",
     logo: figma,
     image: unilectives,
@@ -66,14 +48,32 @@ const projects = [
       "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
     link: "/unilectives",
   },
-  {
-    category: "UX/UI DESIGN",
-    logo: figma,
-    image: dailyui,
-    title: "DAILY UI",
-    description: "A design challenge that presents daily prompts for designing user interfaces.",
-    link: "/dailyui",
-  },
+  // {
+  //   category: "CASE STUDY",
+  //   logo: figma,
+  //   image: destinate,
+  //   title: "DESTINATE",
+  //   description:
+  //     "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
+  //   link: "/destinate",
+  // },
+  // {
+  //   category: "CASE STUDY",
+  //   logo: figma,
+  //   image: pearler,
+  //   title: "HOLD",
+  //   description:
+  //     "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
+  //   link: "/hold",
+  // },
+  // {
+  //   category: "UX/UI DESIGN",
+  //   logo: figma,
+  //   image: dailyui,
+  //   title: "DAILY UI",
+  //   description: "A design challenge that presents daily prompts for designing user interfaces.",
+  //   link: "/dailyui",
+  // },
 ];
 
 const ProjectCard = ({ index, category, image, logo, title, description, link }) => {

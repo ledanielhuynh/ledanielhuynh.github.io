@@ -4,11 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 import github from "../assets/github.svg";
 import figma from "../assets/figma.svg";
-
 import website from "../assets/website.png";
 import unilectives from "../assets/unilectives.png";
 import rissk from "../assets/rissk.png";
 import destinate from "../assets/destinate.png";
+import dailyui from "../assets/dailyui.png";
+import wit from "../assets/wit.png";
+import pearler from "../assets/pearler.png";
 
 const projects = [
   {
@@ -21,13 +23,13 @@ const projects = [
     link: "https://github.com/ledanielhuynh/ledanielhuynh.github.io",
   },
   {
-    category: "UX/UI DESIGN",
-    logo: figma,
-    image: unilectives,
-    title: "UNI-LECTIVES",
+    category: "FRONTEND",
+    logo: github,
+    image: wit,
+    title: "WIT EMP WEBSITE",
     description:
-      "Collaboratively redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
-    link: "/unilectives",
+      "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
+    link: "https://github.com/unswwit/emp-website",
   },
   {
     category: "CASE STUDY",
@@ -39,13 +41,13 @@ const projects = [
     link: "/rissk",
   },
   {
-    category: "CASE STUDY",
+    category: "UX/UI DESIGN",
     logo: figma,
-    image: destinate,
-    title: "DESTINATE",
+    image: unilectives,
+    title: "UNI-LECTIVES",
     description:
-      "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
-    link: "/destinate",
+      "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
+    link: "/unilectives",
   },
 ];
 
