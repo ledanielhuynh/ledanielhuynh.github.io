@@ -61,6 +61,21 @@ const Rissk = () => {
     threshold: 0.5,
   });
 
+  const [ref12, inView12] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [ref13, inView13] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const [ref14, inView14] = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
   const animationVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -131,7 +146,6 @@ const Rissk = () => {
           </p>
           <h1 className="text-center text-2xl font-bold">
             "How might we leverage Microsoft’s technologies to develop a strategy to address
-            <br />
             incident management for people with disabilities and carers during floods?"
           </h1>
           <p>
@@ -266,6 +280,33 @@ const Rissk = () => {
         >
           <div className="space-y-2">
             <h1 className="text-xl">SOLUTION</h1>
+            <h1 className="text-3xl font-bold">INTRODUCING: RISSK.</h1>
+          </div>
+          <h1 className="text-center text-2xl font-bold">
+            RISSK is a two-part strategy that unifies innovative front-end digital services and
+            back-end databases to mitigate the ‘RISSKs’ floods pose to people in need.
+          </h1>
+        </motion.div>
+        <motion.img
+          ref={ref8}
+          className="pb-16"
+          initial="hidden"
+          animate={inView8 ? "visible" : "hidden"}
+          variants={animationVariants}
+          transition={{ duration: 0.5 }}
+          src={risskpersona}
+          alt="Rissk User Persona"
+        ></motion.img>
+        <motion.div
+          ref={ref9}
+          className="space-y-8 border-t py-16"
+          initial="hidden"
+          animate={inView9 ? "visible" : "hidden"}
+          variants={animationVariants}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="space-y-2">
+            <h1 className="text-xl">PRODUCT DEMO</h1>
             <h1 className="text-3xl font-bold">
               RISSK. PROVIDES RESOURCES, INFORMATION, SERVICES, AND SUPPORT TO PEOPLE ON AN
               ACCESSIBLE PLATFORM.
@@ -273,10 +314,10 @@ const Rissk = () => {
           </div>
         </motion.div>
         <motion.div
-          ref={ref8}
+          ref={ref10}
           className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
-          animate={inView8 ? "visible" : "hidden"}
+          animate={inView10 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
@@ -301,10 +342,10 @@ const Rissk = () => {
           </div>
         </motion.div>
         <motion.div
-          ref={ref9}
+          ref={ref11}
           className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
-          animate={inView9 ? "visible" : "hidden"}
+          animate={inView11 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
@@ -337,10 +378,10 @@ const Rissk = () => {
           />
         </motion.div>
         <motion.div
-          ref={ref10}
+          ref={ref12}
           className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
           initial="hidden"
-          animate={inView10 ? "visible" : "hidden"}
+          animate={inView12 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
@@ -367,10 +408,10 @@ const Rissk = () => {
           </div>
         </motion.div>
         <motion.div
-          ref={ref11}
-          className="grid grid-rows-1 gap-16 py-8 md:grid-cols-2"
+          ref={ref13}
+          className="grid grid-rows-1 gap-16 pt-8 pb-16 md:grid-cols-2"
           initial="hidden"
-          animate={inView11 ? "visible" : "hidden"}
+          animate={inView13 ? "visible" : "hidden"}
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
@@ -391,8 +432,8 @@ const Rissk = () => {
             <div className="flex flex-row gap-4">
               <p>-</p>
               <p>
-                Users could input their unique requirements, medical conditions, accessibility
-                needs, emergency contacts, and any other relevant information.
+                Users can input their unique requirements, medical conditions, accessibility needs,
+                emergency contacts, and any other relevant information.
               </p>
             </div>
           </div>
@@ -401,6 +442,52 @@ const Rissk = () => {
             alt="Rissk Mockup"
             className="order-1 w-3/5 place-self-center md:order-2"
           />
+        </motion.div>
+        <motion.div
+          ref={ref14}
+          className="space-y-8 border-t py-16"
+          initial="hidden"
+          animate={inView14 ? "visible" : "hidden"}
+          variants={animationVariants}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="space-y-2">
+            <h1 className="text-xl">CONCLUSION + REFLECTION</h1>
+            <h1 className="text-3xl font-bold">
+              EMBRACING STAKEHOLDER COLLABORATION AND AGILE WORKFLOW
+            </h1>
+          </div>
+          <p>
+            Collaborating closely with a stakeholder during the revamp of the Uni-Lective website
+            design was a significant milestone in my professional growth. Reflecting on this
+            experience, I gained valuable insights, including the importance of: In conclusion, this
+            transformative project allowed me to work closely with a stakeholder, engage in an agile
+            workflow, and greatly enhance my skill set as a UX/UI designer.
+          </p>
+          <div>
+            <div className="flex flex-row gap-4">
+              <p>-</p>
+              <p>
+                Interpersonal skills such as effective communication, coordination, and actively
+                listening with stakeholders.
+              </p>
+            </div>
+            <div className="flex flex-row gap-4">
+              <p>-</p>
+              <p>Cultivating empathy and open-mindedness in collaboration.</p>
+            </div>
+            <div className="flex flex-row gap-4">
+              <p>-</p>
+              <p>Embracing agile methodologies for prompt adjustments and accountability.</p>
+            </div>
+          </div>
+          <p>
+            Collaborating closely with a stakeholder during the revamp of the Uni-Lective website
+            design was a significant milestone in my professional growth. Reflecting on this
+            experience, I gained valuable insights, including the importance of: In conclusion, this
+            transformative project allowed me to work closely with a stakeholder, engage in an agile
+            workflow, and greatly enhance my skill set as a UX/UI designer.
+          </p>
         </motion.div>
       </div>
     </div>

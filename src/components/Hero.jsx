@@ -16,7 +16,7 @@ const Hero = () => {
           <div className="flex h-32 items-center md:h-16">
             <Typewriter
               options={{
-                strings: ["HELLO!", "XIN CHÀO!", "안녕하세요!", "こんにちは!"],
+                strings: ["HELLO!", "XIN CHÀO!", "안 녕 하 세 요!", "こ ん に ち は!"],
                 autoStart: true,
                 loop: true,
               }}
