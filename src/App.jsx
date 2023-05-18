@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
@@ -24,8 +24,10 @@ const App = () => {
     return null;
   };
 
+  const RouterComponent = process.env.NODE_ENV === "production" ? HashRouter : BrowserRouter;
+
   return (
-    <Router>
+    <RouterComponent>
       <div className="flex min-h-screen flex-col items-center justify-between font-tt font-light">
         <Navbar />
         <ScrollToTop />
@@ -45,7 +47,7 @@ const App = () => {
       <div className="pt-12">
         <Footer />
       </div>
-    </Router>
+    </RouterComponent>
   );
 };
 

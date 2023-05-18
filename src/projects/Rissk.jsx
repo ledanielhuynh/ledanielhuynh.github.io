@@ -453,40 +453,21 @@ const Rissk = () => {
         >
           <div className="space-y-2">
             <h1 className="text-xl">CONCLUSION + REFLECTION</h1>
-            <h1 className="text-3xl font-bold">
-              EMBRACING STAKEHOLDER COLLABORATION AND AGILE WORKFLOW
-            </h1>
+            <h1 className="text-3xl font-bold">NAVIGATING INDIVIDUAL GROWTH</h1>
           </div>
           <p>
-            Collaborating closely with a stakeholder during the revamp of the Uni-Lective website
-            design was a significant milestone in my professional growth. Reflecting on this
-            experience, I gained valuable insights, including the importance of: In conclusion, this
-            transformative project allowed me to work closely with a stakeholder, engage in an agile
-            workflow, and greatly enhance my skill set as a UX/UI designer.
-          </p>
-          <div>
-            <div className="flex flex-row gap-4">
-              <p>-</p>
-              <p>
-                Interpersonal skills such as effective communication, coordination, and actively
-                listening with stakeholders.
-              </p>
-            </div>
-            <div className="flex flex-row gap-4">
-              <p>-</p>
-              <p>Cultivating empathy and open-mindedness in collaboration.</p>
-            </div>
-            <div className="flex flex-row gap-4">
-              <p>-</p>
-              <p>Embracing agile methodologies for prompt adjustments and accountability.</p>
-            </div>
-          </div>
-          <p>
-            Collaborating closely with a stakeholder during the revamp of the Uni-Lective website
-            design was a significant milestone in my professional growth. Reflecting on this
-            experience, I gained valuable insights, including the importance of: In conclusion, this
-            transformative project allowed me to work closely with a stakeholder, engage in an agile
-            workflow, and greatly enhance my skill set as a UX/UI designer.
+            Taking on the RISSK project as a UX/UI designer gave me a chance to work independently
+            and navigate the design process with more freedom. Working on the project by myself made
+            me realize the importance of self-motivation, discipline, and clear goal-setting, which
+            helped me take ownership and be accountable for my work. Thorough research and analysis
+            became essential in UX/UI design as I conducted extensive user research, analyzed data,
+            and created user-centered solutions to address specific needs. The project also allowed
+            me to see the difference between consulting and UX/UI design, and how the fact that
+            UX/UI designing is heavily focused on being user-centric as opposed to being financially
+            or technologically feasible. I embraced experimenting and iterating based on user
+            feedback and emerging trends. Overall, the RISSK project showed me the value of
+            autonomy, adaptability, and a genuine passion for creating impactful and user-centric
+            digital experiences.
           </p>
         </motion.div>
       </div>
