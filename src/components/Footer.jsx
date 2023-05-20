@@ -13,10 +13,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full rounded-t-2xl bg-black bg-opacity-75 text-white">
+    <footer className="w-full rounded-t-2xl bg-black bg-opacity-75 text-white text-center">
       <div className="mx-auto max-w-screen-xl grid grid-cols-3 place-items-center">
         <div></div>
-        <div className="flex flex-col items-center justify-center space-y-4 py-12">
+        <div className="flex flex-col items-center justify-center space-y-8 py-12">
           <h1 className="text-lg text-zinc-300 md:text-xl">Interested in working together?</h1>
           <h1 className="text-lg font-bold md:text-xl">LET'S CONNECT!</h1>
           <div className="flex items-center justify-center space-x-4">

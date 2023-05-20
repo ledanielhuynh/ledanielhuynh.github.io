@@ -102,7 +102,7 @@ const Rissk = () => {
           variants={animationVariants}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-8">
             <h1 className="text-3xl font-bold">OVERVIEW</h1>
             <p>
               As a part of Microsoft Protégé, I worked with a team as digital consultants to develop
@@ -114,7 +114,7 @@ const Rissk = () => {
               further relevant research to make the solution more user-oriented.
             </p>
           </div>
-          <div className="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-8">
             <h1 className="text-3xl font-bold">ROLE</h1>
             <div>
               <div className="flex flex-row gap-4">
@@ -139,21 +139,18 @@ const Rissk = () => {
         >
           <h1 className="text-3xl font-bold">PROBLEM STATEMENT</h1>
           <p>
-            The recent floods in Eastern Australia has brought to light the challenges and strain on
-            emergency services, and the critical importance of disaster readiness in Australia.
-            Technology and innovation can play a pivotal role in addressing this gap. With this in
-            mind, our problem statement was:
+            The recent floods in Eastern Australia have highlighted the challenges faced by
+            emergency services and the importance of disaster readiness. Recognizing the potential
+            of technology and innovation, the problem statement was:
           </p>
           <h1 className="text-center text-2xl font-bold">
             "How might we leverage Microsoft’s technologies to develop a strategy to address
             incident management for people with disabilities and carers during floods?"
           </h1>
           <p>
-            But how did we arrive at this specific problem statement? By conducting extensive
-            research and analysis, we identified the pressing issue of incident management for
-            people with disabilities and their carers during floods. This problem statement
-            encapsulates our focus on leveraging Microsoft's technologies to address and overcome
-            the existing challenges in this domain.
+            Extensive research and analysis led to the identification of this pressing issue and the
+            formulation of the problem statement, which seeks to address the existing challenges in
+            this domain using Microsoft's tools and solutions.
           </p>
         </motion.div>
         <motion.div
@@ -452,24 +449,25 @@ const Rissk = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="space-y-2">
-            <h1 className="text-xl">CONCLUSION + REFLECTION</h1>
+            <h1 className="text-xl">CONCLUSION + RETROSPECTIVE</h1>
             <h1 className="text-3xl font-bold">NAVIGATING INDIVIDUAL GROWTH</h1>
           </div>
           <p>
-            Taking on the RISSK project as a UX/UI designer gave me a chance to work independently
-            and navigate the design process with more freedom. Working on the project by myself made
-            me realize the importance of self-motivation, discipline, and clear goal-setting, which
-            helped me take ownership and be accountable for my work. Thorough research and analysis
-            became essential in UX/UI design as I conducted extensive user research, analyzed data,
-            and created user-centered solutions to address specific needs. The project also allowed
-            me to see the difference between consulting and UX/UI design, and how the fact that
-            UX/UI designing is heavily focused on being user-centric as opposed to being financially
-            or technologically feasible. I embraced experimenting and iterating based on user
-            feedback and emerging trends. Overall, the RISSK project showed me the value of
-            autonomy, adaptability, and a genuine passion for creating impactful and user-centric
-            digital experiences.
+            Working on the RISSK project again as a UX/UI designer allowed me to work independently,
+            embrace autonomy, and prioritize user-centric design. I learned the importance of
+            self-motivation, clear goals, and adaptability in this process. The project revealed the
+            distinction between consulting and UX/UI design, emphasizing user needs over financial
+            or technological constraints. Overall, RISSK showcased the value of autonomy,
+            adaptability, and genuine passion for user-friendly design.
           </p>
         </motion.div>
+        <div className="flex flex-col space-y-8 border-t pt-16 items-center text-3xl text-center">
+          <h1 className="font-bold">THANK YOU FOR READING! 🙌</h1>
+          <p className="text-2xl">
+            If you have any enquiries about this project, or want to grab a coffee, feel free to
+            email me at ledanielhuynh@gmail.com.
+          </p>
+        </div>
       </div>
     </div>
   );

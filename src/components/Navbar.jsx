@@ -11,15 +11,33 @@ const Navbar = () => {
   const location = useLocation();
 
   const handleNav = () => {
-    setNav(!nav);
+    setNav((prevNav) => !prevNav);
   };
 
   const openResume = () => {
     window.open(resumePdf, "_blank");
   };
 
+  const NavLink = ({ to, children }) => {
+    const isActive = location.pathname === to;
+
+    return (
+      <li className={`p-2 ${isActive ? "underline decoration-2 underline-offset-4" : ""}`}>
+        <Link
+          to={to}
+          className="hover:duration-400 ease-out hover:underline hover:decoration-2 hover:underline-offset-4"
+        >
+          {children}
+        </Link>
+      </li>
+    );
+  };
+
   return (
-    <nav className="fixed left-0 top-0 w-full rounded-b-2xl bg-black bg-opacity-80 text-white backdrop-blur-lg">
+    <nav
+      className="fixed left-0 top-0 w-full rounded-b-2xl bg-black bg-opacity-80 text-white backdrop-blur-lg"
+      style={{ zIndex: 999 }}
+    >
       <div className="mx-auto flex max-w-screen-xl flex-row items-center justify-between px-12 py-6">
         <img
           src={logo}
@@ -28,30 +46,8 @@ const Navbar = () => {
           onClick={() => (window.location.href = "/")}
         />
         <ul className="hidden gap-8 text-xl font-bold text-white md:flex">
-          <li
-            className={`p-2 ${
-              location.pathname === "/work" ? "underline decoration-2 underline-offset-4" : ""
-            }`}
-          >
-            <Link
-              to="/work"
-              className="hover:duration-400 ease-out hover:underline hover:decoration-2 hover:underline-offset-4"
-            >
-              WORK
-            </Link>
-          </li>
-          <li
-            className={`p-2 ${
-              location.pathname === "/aboutme" ? "underline decoration-2 underline-offset-4" : ""
-            }`}
-          >
-            <Link
-              to="/aboutme"
-              className="hover:duration-400 ease-out hover:underline hover:decoration-2 hover:underline-offset-4"
-            >
-              ABOUT ME
-            </Link>
-          </li>
+          <NavLink to="/work">WORK</NavLink>
+          <NavLink to="/aboutme">ABOUT ME</NavLink>
           <li className="flex cursor-pointer flex-row items-center rounded-full border-2 border-zinc-500 bg-transparent px-2 ease-out hover:bg-zinc-600 hover:duration-300">
             <span className="p-2" onClick={openResume}>
               RESUME
@@ -76,10 +72,10 @@ const Navbar = () => {
             />
           </div>
           <li className="border-y border-zinc-800 px-12 py-6 font-bold">
-            <Link to="/work">WORK</Link>
+            <NavLink to="/work">WORK</NavLink>
           </li>
           <li className="border-b border-zinc-800 px-12 py-6 font-bold">
-            <Link to="/aboutme">ABOUT ME</Link>
+            <NavLink to="/aboutme">ABOUT ME</NavLink>
           </li>
           <li className="border-b border-zinc-800 px-8 py-6 font-bold">
             <div className="flex w-fit flex-row items-center rounded-full border-2 border-zinc-500 px-2">

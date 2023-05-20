@@ -305,43 +305,25 @@ const UniLectives = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="space-y-2">
-            <h1 className="text-xl">CONCLUSION + REFLECTION</h1>
+            <h1 className="text-xl">CONCLUSION + RETROSPECTIVE</h1>
             <h1 className="text-3xl font-bold">
               EMBRACING STAKEHOLDER COLLABORATION AND AGILE WORKFLOW
             </h1>
           </div>
           <p>
-            Collaborating closely with a stakeholder during the revamp of the Uni-Lective website
-            design was a significant milestone in my professional growth. Reflecting on this
-            experience, I gained valuable insights, including the importance of: In conclusion, this
-            transformative project allowed me to work closely with a stakeholder, engage in an agile
-            workflow, and greatly enhance my skill set as a UX/UI designer.
-          </p>
-          <div>
-            <div className="flex flex-row gap-4">
-              <p>-</p>
-              <p>
-                Interpersonal skills such as effective communication, coordination, and actively
-                listening with stakeholders.
-              </p>
-            </div>
-            <div className="flex flex-row gap-4">
-              <p>-</p>
-              <p>Cultivating empathy and open-mindedness in collaboration.</p>
-            </div>
-            <div className="flex flex-row gap-4">
-              <p>-</p>
-              <p>Embracing agile methodologies for prompt adjustments and accountability.</p>
-            </div>
-          </div>
-          <p>
-            Collaborating closely with a stakeholder during the revamp of the Uni-Lective website
-            design was a significant milestone in my professional growth. Reflecting on this
-            experience, I gained valuable insights, including the importance of: In conclusion, this
-            transformative project allowed me to work closely with a stakeholder, engage in an agile
-            workflow, and greatly enhance my skill set as a UX/UI designer.
+            Working closely with a stakeholder on the Uni-Lective website revamp was a pivotal
+            moment for my professional growth. I learned the importance of effective communication,
+            empathy, and agility in collaboration. This transformative project expanded my skill set
+            as a UX/UI designer and allowed me to engage in an agile workflow.
           </p>
         </motion.div>
+        <div className="flex flex-col space-y-8 border-t pt-16 items-center text-3xl text-center">
+          <h1 className="font-bold">THANK YOU FOR READING! 🙌</h1>
+          <p className="text-2xl">
+            If you have any enquiries about this project, or want to grab a coffee, feel free to
+            email me at ledanielhuynh@gmail.com.
+          </p>
+        </div>
       </div>
     </div>
   );
