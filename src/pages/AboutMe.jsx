@@ -41,16 +41,16 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center space-y-16">
+    <div className="flex flex-col items-center justify-center space-y-16">
       <div className="space-y-16 px-8 pt-28 md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col max-w-screen-xl items-center justify-center gap-8 md:gap-16 rounded-2xl bg-zinc-900 p-12 md:p-16 md:flex-row"
+          className="flex max-w-screen-xl flex-col items-center justify-center gap-8 rounded-2xl bg-zinc-900 p-12 md:flex-row md:gap-16 md:p-16"
         >
           <div className="flex w-full flex-col space-y-8 md:w-2/3">
-            <div className="text-6xl font-bold text-white">
+            <div className="text-5xl font-bold text-white md:text-6xl">
               <h1>A LITTLE ABOUT ME</h1>
             </div>
             <ul className="text-xl text-zinc-300 md:text-2xl">
@@ -72,7 +72,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-col max-w-screen-xl gap-8 rounded-2xl bg-zinc-900 p-16"
+          className="m:p-16 flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-12"
         >
           <div className="text-4xl font-bold text-white">
             <h1>I HAVE A PODCAST 🎙️</h1>
@@ -84,7 +84,7 @@ const AboutMe = () => {
             passionate about as well as experiences/topics that were both common/avoided across
             Asian-Australian households. Here's our latest (and my personal favourite) episode:
           </ul>
-          <div class="aspect-w-16 aspect-h-5">
+          <div class="aspect-h-5 aspect-w-16">
             <iframe
               src="https://open.spotify.com/embed/episode/2b2P825DuDH5zjue41qRms?utm_source=generator&theme=0&t=0"
               frameborder="0"
@@ -97,7 +97,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-col max-w-screen-xl gap-8 rounded-2xl bg-zinc-900 p-16"
+          className="m:p-16 flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-12"
         >
           <div className="text-4xl font-bold text-white">
             <h1>I ENJOY CREATING CINEMATIC EDITS 🎥</h1>
@@ -109,7 +109,7 @@ const AboutMe = () => {
             like I am living in a movie - a movie that can be relived through camera roll videos and
             personal edits:
           </ul>
-          <div class="aspect-w-16 aspect-h-9">
+          <div class="aspect-h-9 aspect-w-16">
             <iframe
               src="https://www.youtube.com/embed/fjiky_OWwlE"
               frameborder="0"
@@ -122,9 +122,9 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="flex flex-col max-w-screen-xl gap-8 rounded-2xl bg-zinc-900 p-16"
+          className="m:p-16 flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-12"
         >
-          <div className="text-4xl font-bold text-white">
+          <div className="text-3xl font-bold text-white md:text-4xl">
             <h1>I ALSO ENJOY PHOTOGRAPHING LANDSCAPES AND SCENERIES 📷</h1>
           </div>
           <ul className="text-xl text-zinc-300 md:text-2xl">
@@ -135,18 +135,18 @@ const AboutMe = () => {
             favourite photos while travelling:
           </ul>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             {items.map((item) => (
               <motion.div
                 key={item.id}
                 layoutId={item.id}
                 onClick={() => setSelectedId(item.id)}
-                className="relative aspect-w-16 aspect-h-9"
+                className="aspect-h-9 aspect-w-16 relative"
               >
                 <img
                   src={item.src}
                   alt={`Photo ${item.id}`}
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="h-full w-full rounded-2xl object-cover"
                 />
               </motion.div>
             ))}

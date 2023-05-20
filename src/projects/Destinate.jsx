@@ -223,7 +223,7 @@ const Destinate = () => {
           <div className="space-y-2">
             <h1 className="text-xl">USER RESEARCH</h1>
             <h1 className="text-3xl font-bold">
-              USING THE VOICES OF CARERS TO CONSTRUCT A USER PERSONA
+              OUTSOURCING UNIVERSITY STUDENTS TO FIND THE SHARED PAINS
             </h1>
           </div>
           <p>
@@ -261,7 +261,7 @@ const Destinate = () => {
           src={destinatepersona}
           alt="DestinATE User Persona"
         ></motion.img>
-        <div className="flex flex-col gap-16 py-16 border-t">
+        <div className="flex flex-col gap-16 border-t py-16">
           <motion.div
             ref={ref7}
             className="space-y-8"
@@ -457,7 +457,7 @@ const Destinate = () => {
         </motion.div>
         <motion.div
           ref={ref14}
-          className="grid grid-rows-1 gap-16 pt-8 pb-16 md:grid-cols-2"
+          className="grid grid-rows-1 gap-16 pb-16 pt-8 md:grid-cols-2"
           initial="hidden"
           animate={inView14 ? "visible" : "hidden"}
           variants={animationVariants}
@@ -518,7 +518,7 @@ const Destinate = () => {
             more self-motivated and adaptable designer.
           </p>
         </motion.div>
-        <div className="flex flex-col space-y-8 border-t pt-16 items-center text-3xl text-center">
+        <div className="flex flex-col items-center space-y-8 border-t pt-16 text-center text-3xl">
           <h1 className="font-bold">THANK YOU FOR READING! 🙌</h1>
           <p className="text-2xl">
             If you have any enquiries about this project, or want to grab a coffee, feel free to
