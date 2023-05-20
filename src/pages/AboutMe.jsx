@@ -47,7 +47,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex max-w-screen-xl flex-col items-center justify-center gap-8 rounded-2xl bg-zinc-900 p-12 md:flex-row md:gap-16 md:p-16"
+          className="flex max-w-screen-xl flex-col items-center justify-center gap-8 rounded-2xl bg-zinc-900 p-10 md:flex-row md:gap-16 md:p-16"
         >
           <div className="flex w-full flex-col space-y-8 md:w-2/3">
             <div className="text-5xl font-bold text-white md:text-6xl">
@@ -72,10 +72,10 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="m:p-16 flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-12"
+          className="flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-10 md:p-16"
         >
-          <div className="text-4xl font-bold text-white">
-            <h1>I HAVE A PODCAST 🎙️</h1>
+          <div className="text-3xl font-bold text-white">
+            <h1>🎙️ I HAVE A PODCAST</h1>
           </div>
           <ul className="text-xl text-zinc-300 md:text-2xl">
             In mid-2022, my friend and I decided to launch our very own podcast for the modern
@@ -97,10 +97,10 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="m:p-16 flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-12"
+          className=" flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-10 md:p-16"
         >
-          <div className="text-4xl font-bold text-white">
-            <h1>I ENJOY CREATING CINEMATIC EDITS 🎥</h1>
+          <div className="text-3xl font-bold text-white">
+            <h1>🎥 I ENJOY CREATING CINEMATIC EDITS</h1>
           </div>
           <ul className="text-xl text-zinc-300 md:text-2xl">
             I love delving into the world of video editing, where I can bring together visuals,
@@ -122,10 +122,10 @@ const AboutMe = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="m:p-16 flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-12"
+          className="flex max-w-screen-xl flex-col gap-8 rounded-2xl bg-zinc-900 p-10 md:p-16"
         >
           <div className="text-3xl font-bold text-white md:text-4xl">
-            <h1>I ALSO ENJOY PHOTOGRAPHING LANDSCAPES AND SCENERIES 📷</h1>
+            <h1>📷 I ALSO ENJOY PHOTOGRAPHY</h1>
           </div>
           <ul className="text-xl text-zinc-300 md:text-2xl">
             Photography quickly became a cherished hobby when I first got my hands on an iPod with a

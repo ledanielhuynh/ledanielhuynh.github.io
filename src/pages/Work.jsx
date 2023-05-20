@@ -123,10 +123,10 @@ const Work = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex max-w-screen-xl flex-col items-center justify-center space-x-8 rounded-2xl bg-zinc-900 md:flex-row p-12 md:p-16"
+        className="flex max-w-screen-xl flex-col items-center justify-center space-x-8 rounded-2xl bg-zinc-900 p-10 md:flex-row md:p-16"
       >
         <div className="flex w-full flex-col space-y-8">
-          <div className="text-5xl md:text-6xl font-bold text-white">
+          <div className="text-5xl font-bold text-white md:text-6xl">
             <h1>PROJECTS</h1>
           </div>
           <ul className="text-xl text-zinc-300 md:text-2xl">

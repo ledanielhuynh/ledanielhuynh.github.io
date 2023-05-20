@@ -96,7 +96,7 @@ const Home = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex max-w-screen-xl flex-col items-center justify-center space-x-8 rounded-2xl bg-zinc-900 px-12 md:flex-row md:px-16"
+        className="flex max-w-screen-xl flex-col items-center justify-center space-x-8 rounded-2xl bg-zinc-900 px-10 md:flex-row md:px-16"
       >
         <div className="flex w-full flex-col space-y-8 py-8 md:w-2/3 md:py-12">
           <div className="text-5xl font-bold text-white md:text-6xl">
