@@ -8,7 +8,7 @@ import github from "../assets/github.svg";
 import figma from "../assets/figma.svg";
 import website from "../assets/website.png";
 import unilectives from "../assets/unilectives.png";
-import rissk from "../assets/rissk.png";
+import destinate from "../assets/destinate.png";
 import wit from "../assets/wit.png";
 
 const projects = [
@@ -27,7 +27,7 @@ const projects = [
     image: wit,
     title: "WIT EMP WEBSITE",
     description:
-      "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
+      "Collaboratively deployed the WIT EMP website to provide program mentees a centralized platform that updates them on upcoming events and mentors. Coded with NextJS, ReactJS, HTML, CSS, and JavaScript.",
     link: "https://github.com/unswwit/emp-website",
   },
   {
@@ -36,17 +36,17 @@ const projects = [
     image: unilectives,
     title: "UNI-LECTIVES",
     description:
-      "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
+      "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives. Coded with NextJS, ReactJS, HTML, CSS, and JavaScript.",
     link: "/unilectives",
   },
   {
     category: "CASE STUDY",
     logo: figma,
-    image: rissk,
-    title: "RISSK.",
+    image: destinate,
+    title: "DESTINATE",
     description:
-      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "/rissk",
+      "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
+    link: "/destinate",
   },
 ];
 

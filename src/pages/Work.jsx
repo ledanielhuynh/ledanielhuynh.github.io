@@ -28,7 +28,7 @@ const projects = [
     image: wit,
     title: "WIT EMP WEBSITE",
     description:
-      "Collaboratively deployed the WIT Empowerment Mentoring Program website to update program participants on upcoming events and mentors.",
+      "Collaboratively deployed the WIT EMP website to provide program mentees a centralized platform that updates them on upcoming events and mentors.. Coded with NextJS, ReactJS, HTML, CSS, and JavaScript.",
     link: "https://github.com/unswwit/emp-website",
   },
   {
@@ -43,20 +43,20 @@ const projects = [
   {
     category: "CASE STUDY",
     logo: figma,
-    image: rissk,
-    title: "RISSK.",
-    description:
-      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "/rissk",
-  },
-  {
-    category: "CASE STUDY",
-    logo: figma,
     image: destinate,
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
     link: "/destinate",
+  },
+  {
+    category: "CASE STUDY",
+    logo: figma,
+    image: rissk,
+    title: "RISSK.",
+    description:
+      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
+    link: "/rissk",
   },
   {
     category: "CASE STUDY",

@@ -217,7 +217,7 @@ const UniLectives = () => {
           transition={{ duration: 0.5 }}
         >
           <img src={unilectives01light} alt="UniLectives Landing Page" className="rounded-2xl" />
-          <h1 className="text-xl font-bold place-self-center">UniLectives Landing Page</h1>
+          <h1 className="place-self-center text-xl font-bold">UniLectives Landing Page</h1>
         </motion.div>
         <motion.div
           ref={ref7}
@@ -228,7 +228,7 @@ const UniLectives = () => {
           transition={{ duration: 0.5 }}
         >
           <img src={unilectives02light} alt="UniLectives Search Courses" className="rounded-2xl" />
-          <h1 className="text-xl font-bold place-self-center">UniLectives Search Courses</h1>
+          <h1 className="place-self-center text-xl font-bold">UniLectives Search Courses</h1>
         </motion.div>
         <motion.div
           ref={ref8}
@@ -243,7 +243,7 @@ const UniLectives = () => {
             alt="UniLectives Extended Search Courses (Card View)"
             className="rounded-2xl"
           />
-          <h1 className="text-xl font-bold place-self-center">
+          <h1 className="place-self-center text-xl font-bold">
             UniLectives Extended Search Courses (Card View)
           </h1>
         </motion.div>
@@ -260,7 +260,7 @@ const UniLectives = () => {
             alt="UniLectives COMP1511 Review Modal"
             className="rounded-2xl"
           />
-          <h1 className="text-xl font-bold place-self-center">
+          <h1 className="place-self-center text-xl font-bold">
             UniLectives Extended Search Courses (List View)
           </h1>
         </motion.div>
@@ -277,7 +277,7 @@ const UniLectives = () => {
             alt="UniLectives COMP1511 Review Page"
             className="rounded-2xl"
           />
-          <h1 className="text-xl font-bold place-self-center">UniLectives COMP1511 Review Page</h1>
+          <h1 className="place-self-center text-xl font-bold">UniLectives COMP1511 Review Page</h1>
         </motion.div>
         <motion.div
           ref={ref11}
@@ -292,7 +292,7 @@ const UniLectives = () => {
             alt="UniLectives COMP1511 Submit Review Modal"
             className="rounded-2xl"
           />
-          <h1 className="text-xl font-bold place-self-center">
+          <h1 className="place-self-center text-xl font-bold">
             UniLectives COMP1511 Submit Review Modal
           </h1>
         </motion.div>
@@ -317,7 +317,7 @@ const UniLectives = () => {
             as a UX/UI designer and allowed me to engage in an agile workflow.
           </p>
         </motion.div>
-        <div className="flex flex-col space-y-8 border-t pt-16 items-center text-3xl text-center">
+        <div className="flex flex-col items-center space-y-8 border-t pt-16 text-center text-3xl">
           <h1 className="font-bold">THANK YOU FOR READING! 🙌</h1>
           <p className="text-2xl">
             If you have any enquiries about this project, or want to grab a coffee, feel free to
