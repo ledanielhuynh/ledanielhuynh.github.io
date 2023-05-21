@@ -7,6 +7,7 @@ import AboutMe from "./pages/AboutMe";
 import Rissk from "./projects/Rissk";
 import Destinate from "./projects/Destinate";
 import UniLectives from "./projects/UniLectives";
+import Hold from "./projects/Hold";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
           <Route exact path="/rissk" element={<Rissk />} />
           <Route exact path="/destinate" element={<Destinate />} />
           <Route exact path="/unilectives" element={<UniLectives />} />
+          <Route exact path="/hold" element={<Hold />} />
         </Routes>
       </div>
       <div className="pt-16">

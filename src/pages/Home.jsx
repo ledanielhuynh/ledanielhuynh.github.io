@@ -31,15 +31,6 @@ const projects = [
     link: "https://github.com/unswwit/emp-website",
   },
   {
-    category: "CASE STUDY",
-    logo: figma,
-    image: rissk,
-    title: "RISSK.",
-    description:
-      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "/rissk",
-  },
-  {
     category: "UX/UI DESIGN",
     logo: figma,
     image: unilectives,
@@ -47,6 +38,15 @@ const projects = [
     description:
       "Redesigned CSESoc's Uni-lectives, which offers UNSW computer science students a platform where they can read and write reviews to aid in selecting their electives.",
     link: "/unilectives",
+  },
+  {
+    category: "CASE STUDY",
+    logo: figma,
+    image: rissk,
+    title: "RISSK.",
+    description:
+      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
+    link: "/rissk",
   },
 ];
 

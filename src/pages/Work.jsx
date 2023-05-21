@@ -10,7 +10,7 @@ import rissk from "../assets/rissk.png";
 import wit from "../assets/wit.png";
 import destinate from "../assets/destinate.png";
 import dailyui from "../assets/dailyui.png";
-import pearler from "../assets/pearler.png";
+import hold from "../assets/hold.png";
 
 const projects = [
   {
@@ -32,15 +32,6 @@ const projects = [
     link: "https://github.com/unswwit/emp-website",
   },
   {
-    category: "CASE STUDY",
-    logo: figma,
-    image: rissk,
-    title: "RISSK.",
-    description:
-      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "/rissk",
-  },
-  {
     category: "UX/UI DESIGN",
     logo: figma,
     image: unilectives,
@@ -52,21 +43,30 @@ const projects = [
   {
     category: "CASE STUDY",
     logo: figma,
+    image: rissk,
+    title: "RISSK.",
+    description:
+      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
+    link: "/rissk",
+  },
+  {
+    category: "CASE STUDY",
+    logo: figma,
     image: destinate,
     title: "DESTINATE",
     description:
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
     link: "/destinate",
   },
-  // {
-  //   category: "CASE STUDY",
-  //   logo: figma,
-  //   image: pearler,
-  //   title: "HOLD",
-  //   description:
-  //     "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
-  //   link: "/hold",
-  // },
+  {
+    category: "CASE STUDY",
+    logo: figma,
+    image: hold,
+    title: "HOLD",
+    description:
+      "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
+    link: "/hold",
+  },
   // {
   //   category: "UX/UI DESIGN",
   //   logo: figma,

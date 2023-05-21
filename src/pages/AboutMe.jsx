@@ -42,7 +42,7 @@ const AboutMe = () => {
 
   return (
     <div className="flex flex-col items-center justify-center space-y-16">
-      <div className="space-y-16 px-8 pt-28 md:pt-40">
+      <div className="space-y-16 px-8 pt-28 text-white md:pt-40">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,15 +55,14 @@ const AboutMe = () => {
             </div>
             <ul className="text-xl text-zinc-300 md:text-2xl">
               I'm a Computer Science student at UNSW, and my goal is to become a unicorn developer.
-              But what does this mean? I want to be really good at both designing beautiful user
+              What does this mean? I want to be really good at both designing beautiful user
               interfaces and bringing them to life through frontend development. I believe in
               creating digital solutions that are not only functional but also user-friendly and
               visually appealing. I'm all about making technology more human-centric and sharing my
               fascination towards technology to everyone.
             </ul>
             <ul className="text-xl text-zinc-300 md:text-2xl">
-              But that's not all there is to me! When I'm not coding, I enjoy indulging in my other
-              creative hobbies:
+              When I'm not coding or on Figma, I enjoy indulging in my other creative hobbies:
             </ul>
           </div>
           <img src={danielreal} alt="Daniel Memoji" className="w-full md:h-1/3 md:w-1/3" />
@@ -152,6 +151,12 @@ const AboutMe = () => {
             ))}
           </div>
         </motion.div>
+        <div className="flex flex-col items-center space-y-8 border-t pt-16 text-center text-3xl">
+          <h1 className="font-bold">THANK YOU FOR READING! 🙌</h1>
+          <p className="text-2xl">
+            Thank you so much for visiting my portfolio and following me on my journey 🫶
+          </p>
+        </div>
       </div>
     </div>
   );
