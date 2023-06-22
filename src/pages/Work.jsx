@@ -49,15 +49,15 @@ const projects = [
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
     link: "/destinate",
   },
-  {
-    category: "CASE STUDY",
-    logo: figma,
-    image: rissk,
-    title: "RISSK.",
-    description:
-      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-    link: "/rissk",
-  },
+  // {
+  //   category: "CASE STUDY",
+  //   logo: figma,
+  //   image: rissk,
+  //   title: "RISSK.",
+  //   description:
+  //     "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
+  //   link: "/rissk",
+  // },
   {
     category: "CASE STUDY",
     logo: figma,
@@ -130,9 +130,9 @@ const Work = () => {
             <h1>PROJECTS</h1>
           </div>
           <ul className="text-xl text-zinc-300 md:text-2xl">
-            Below consists of the work I am most proud of throughout the years. Ranging from case
-            studies to UX/UI design projects, each one highlights my passion for technology,
-            expertise in relevant software, and overall drive to create a positive impact.
+            Below consists of the work I am most proud of throughout the years. Ranging from case studies to UX/UI
+            design projects, each one highlights my passion for technology, expertise in relevant software, and overall
+            drive to create a positive impact.
           </ul>
         </div>
       </motion.div>
