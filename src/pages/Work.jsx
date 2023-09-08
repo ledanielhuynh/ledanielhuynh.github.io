@@ -49,15 +49,15 @@ const projects = [
       "An app that enables users to store and share recommendations conveniently, whilst gaining monetary rewards.",
     link: "/destinate",
   },
-  // {
-  //   category: "CASE STUDY",
-  //   logo: figma,
-  //   image: rissk,
-  //   title: "RISSK.",
-  //   description:
-  //     "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
-  //   link: "/rissk",
-  // },
+  {
+    category: "CASE STUDY",
+    logo: figma,
+    image: rissk,
+    title: "RISSK.",
+    description:
+      "An app that offers assistance to people with disabilities and their caregivers, covering their needs in natural disasters.",
+    link: "/rissk",
+  },
   {
     category: "CASE STUDY",
     logo: figma,
@@ -67,14 +67,14 @@ const projects = [
       "Redesign Pearler's educational day-trading game, HOLD, to make the landing page more appealing, accessible, and consistent.",
     link: "/hold",
   },
-  // {
-  //   category: "UX/UI DESIGN",
-  //   logo: figma,
-  //   image: dailyui,
-  //   title: "DAILY UI",
-  //   description: "A design challenge that presents daily prompts for designing user interfaces.",
-  //   link: "/dailyui",
-  // },
+  {
+    category: "UX/UI DESIGN",
+    logo: figma,
+    image: dailyui,
+    title: "DAILY UI",
+    description: "A design challenge that presents daily prompts for designing user interfaces.",
+    link: "/dailyui",
+  },
 ];
 
 const ProjectCard = ({ index, category, image, logo, title, description, link }) => {
